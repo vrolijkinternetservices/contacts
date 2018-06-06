@@ -1,7 +1,0 @@
-<?php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'infomania_nl_data');
-define('DB_USER', 'infom_nl_data');
-define('DB_PASS', 'GoForGold77');
-
-$db = Database::getInstance('mysql:dbname='.DB_NAME.';host='.DB_HOST, DB_USER, DB_PASS);
