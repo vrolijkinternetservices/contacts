@@ -1,0 +1,207 @@
+/*
+    Document   : css
+    Created on : Nov 4, 2016, 12:58:50 PM
+    Author     : raymond
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('/assets/font/HelveticaNeue.ttf');
+}
+
+html, body, form {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: HelveticaNeue;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+hr {
+  border: 0px;
+  height: 1px;
+  background-color: #999999;
+  margin-top: 30px;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.icon, input[type=image] {
+  width: 34px;
+}
+
+.bottom-bar {
+  height: 130px;
+  background-color: #666;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 30px;
+}
+
+.bottom-bar input[type=submit] {
+  border: 0px;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0px auto;
+}
+
+.bottom-bar img,
+.bottom-bar input[type=image],
+.bottom-bar input[type=submit],
+.bottom-bar p {
+  margin: 25px 0px 0px 50px;
+}
+
+
+.bottom-bar p {
+  color: #fff;
+}
+
+.contains-icon {
+  text-align: center;
+}
+
+.contains-icon p {
+  margin-top: 25px;
+}
+
+#contacts-overview #contacts-overview-data {
+  height: calc(100% - 130px);
+  overflow-y: scroll;
+}
+
+#contacts-overview .contact {
+  height: 105px;
+  line-height: 105px;
+  vertical-align: middle;
+}
+
+#contacts-overview-data a div p, #contacts-overview-data div p {
+  color: #000;
+  display: block;
+  margin: 0px 0px 0px 20px;
+}
+
+.contact:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.message {
+  height: 105px;
+  line-height: 105px;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+}
+
+.message p, .message a {
+  color: #000;
+  display: block;
+  margin: 0px 0px 0px 20px;
+}
+
+#contacts-overview, #contact-details {
+  width: 100%;
+  height: 100%;
+}
+
+#contact-details #contact-details-data {
+  padding: 0 30px;
+  color: #969696;
+  height: 100%;
+  position: relative;
+}
+
+#contact-details #contact-details-data div {
+  clear: both;
+}
+
+#contact-details #contact-details-data span,
+#contact-details #contact-details-data label {
+  padding-top: 30px;
+  display: inline-block;
+  padding-right: 4%;
+}
+
+#contact-details #contact-details-data input {
+  display: inline-block;
+  border: 0px;
+  color: #969696;
+  width: 225px;
+}
+
+#contact-details #contact-details-data textarea {
+  margin-top: 30px;
+  border: 0px;
+  color: #969696;
+}
+
+#contact-details #contact-details-data span:first-child,
+#contact-details #contact-details-data label {
+  width: 15%;
+  text-align: right;
+}
+
+.error {
+  color: red;
+}
+
+.toggle-favorite {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+}
+
+@media only screen and (min-width : 768px) {
+
+  .desktop-only {
+    display: block;
+  }
+
+  #menu {
+    height: 100%;
+    width: 252px;
+    border-right: 1px solid #d3dadb;
+    background-color: #c9edf2;
+  }
+
+  #menu div {
+    height: 220px;
+    background-color: #666;
+  }
+
+  #menu img {
+    margin-top: 60px;
+  }
+
+  #menu div p {
+   color: #fff;
+  }
+
+  #menu p {
+    color: #676767;
+  }
+
+  #contact-details #contact-details-data {
+    padding: 0 30px;
+    color: #969696;
+    height: calc(100% - 130px);
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}
